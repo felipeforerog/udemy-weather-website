@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <title>Contactos</title>
+        <link rel="stylesheet" href="/css/style.css">           <!-- path absoluto del web server que empieza en public -->
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <table border="1">
+                <tr><td>Nombre: </td><td>{{name}}</td></tr>
+                <tr><td>Tefono: </td><td>{{number}}</td></tr>
+            </table>
+        </div>
+        {{>footer}}
+    </body>
+</htlm>

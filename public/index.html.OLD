@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <!--<link rel="stylesheet" href="./css/style.css">-->   <!-- path relativo que empieza desde este archivo -->
+        <link rel="stylesheet" href="/css/style.css">           <!-- path absoluto del web server que empieza en public -->
+
+        <script src="/js/data.js"></script>
+    </head>
+
+    <body>
+        <h1>THIS IS THE INDEX</h1>
+    </body>
+</htlm>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <title>404</title>
+        <link rel="stylesheet" href="/css/style.css">           <!-- path absoluto del web server que empieza en public -->
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <div>404 - Pagina no encotrada</div>
+            <div>{{errorMessage}}</div>
+        </div>
+        {{>footer}}
+    </body>
+</htlm>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <title>Index</title>
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/ico" />
+        <link rel="stylesheet" href="/css/style.css" />   <!-- path absoluto del web server que empieza en public -->
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Use este formulario para obtener informacion del clima:</p>
+
+            <form action="">
+                <input type="text" placeholder="location">
+                <button>Search</button>
+            </form>
+
+            <br><div id='message-1'></div>
+            <br><div id='message-2'></div>
+        </div>
+        {{>footer}}
+
+        <!--scripts-->
+        <script src="/js/data.js"></script>
+    </body>
+</htlm>
