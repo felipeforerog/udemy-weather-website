@@ -99,11 +99,33 @@ weatherForm.addEventListener('submit', (event) => {
     //console.log(location)
 })
 
+/*
 function forecastLocation(location){
     message1.textContent = ''
     message2.textContent = ''
 
     fetch(`http://localhost:3000/weather?address=${location}`).then((response) => {
+        response.json().then((data) => {
+            if(data.error){
+                console.log(data.error)
+                message1.textContent = data.error
+            }else{
+                console.log(data.location)
+                console.log(data.forecast)
+                message1.textContent = `${data.location}`
+                message2.textContent = `${data.forecast}`
+            }
+        })
+    })
+}
+*/
+
+//heroku
+function forecastLocation(location){
+    message1.textContent = ''
+    message2.textContent = ''
+
+    fetch(`/weather?address=${location}`).then((response) => {
         response.json().then((data) => {
             if(data.error){
                 console.log(data.error)

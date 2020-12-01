@@ -351,6 +351,7 @@ const forecast = require('./utils/forecast.js')
 
 //create de express aplication
 const app = express()
+const port = process.env.PORT || 3000
 
 
 //directorio public y templates expuestos para que express(web server) los use.
@@ -487,7 +488,14 @@ app.get('*', (req, res) => {
 })
 
 
-//starts the express server
+/*
+//starts the express server in localhost
 app.listen(3000, () => {
     console.log('Server is up on port 3000.')
+})
+*/
+
+//starts the express server in heroku
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}.`)
 })
